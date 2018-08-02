@@ -1,2 +1,2 @@
 ## Pentesting Report CMS
-it's still under final develop, using ThinkPHP.
+It's still under developping, using ThinkPHP.
