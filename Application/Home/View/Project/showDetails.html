@@ -1,0 +1,26 @@
+<html>
+<meta charset="UTF-8">
+<title>项目详情</title>
+
+<body>
+<h1><a href="#">输出报告</a></h1>
+<div>
+    <div>项目信息</div>
+    <ul>
+        <volist name="details" id="d">
+            <li>{$d.client}====={$d.name}</li>
+        </volist>
+    </ul>
+</div>
+
+<div>
+    <div>漏洞列表</div>
+    <ul>
+    <volist name="vlist" id="vuls">
+        <li>{$vuls.vulgrp.name}====={$vuls.urls}==========<span><a href="/Home/Vuls/doDelete?id={$vuls.id}">删除</a>=<a href="/Home/Vuls/doEdit?id={$vuls.id}">编辑</a></span></li>
+    </volist>
+    </ul>
+</div>
+</body>
+
+</html>

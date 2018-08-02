@@ -1,0 +1,30 @@
+<html>
+<meta charset="UTF-8">
+<title>项目列表</title>
+
+<body>
+
+<!--添加项目-->
+<p>
+<div>
+    <a href="/Home/Project/add">添加项目</a>
+</div>
+</p>
+
+<!--提交漏洞-->
+<p>
+<div>
+    <a href="/Home/Vuls/show">提交漏洞</a>
+</div>
+</p>
+
+<div>
+    <ul>
+        <volist name="list" id="vo">
+            <li><a href="/Home/Project/showDetails?id={$vo.id}">"{$vo.client}":{$vo.pnumber}</a> ------------ <a href="/Home/Project/doDelete?id={$vo.id}">删除</a>-<a href="/Home/Project/doEdit?id={$vo.id}">编辑</a></li>
+        </volist>
+    </ul>
+</div>
+</body>
+
+</html>
